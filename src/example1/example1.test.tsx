@@ -20,7 +20,7 @@ describe.skip("Bad Example", () => {
   });
 });
 
-describe.skip("<ExampleComponent>", () => {
+describe("<ExampleComponent>", () => {
   it("displays 'No active users found' if list is empty", () => {
     render(<ExampleComponent users={[]} />);
 
@@ -50,7 +50,7 @@ describe.skip("<ExampleComponent>", () => {
   });
 });
 
-describe.skip("filterActiveUsers", () => {
+describe("filterActiveUsers", () => {
   it("returns only active users", () => {
     const users = [
       { id: 1, name: "Alice", isActive: true },
@@ -67,7 +67,7 @@ describe.skip("filterActiveUsers", () => {
   });
 });
 
-describe.skip("formatUserName", () => {
+describe("formatUserName", () => {
   it("returns the user's name in uppercase", () => {
     const user = { id: 1, name: "Alice", isActive: true };
     const result = formatUserName(user);
