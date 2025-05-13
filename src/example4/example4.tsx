@@ -1,18 +1,16 @@
 //give me an example of a component that is better tested with userEvent than fireEvent
 
-import React from "react";
+import React, { useState } from "react";
 
 const LoginForm: React.FC<{
   email: string;
   setEmail: (email: string) => void;
   password: string;
   setPassword: (password: string) => void;
-  message: string;
-  setMessage: (password: string) => void;
-}> = ({ email, setEmail, password, setPassword, message, setMessage }) => {
+}> = ({ email, setEmail, password, setPassword }) => {
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");
-  // const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("");
 
   console.log("LoginForm rendered", email);
 

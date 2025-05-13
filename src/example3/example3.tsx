@@ -1,7 +1,7 @@
 //Create an example hook with somewhat complicated logic
 import { useState, useMemo } from "react";
 
-type Task = {
+export type Task = {
   id: number;
   title: string;
   completed: boolean;

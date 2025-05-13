@@ -1,12 +1,12 @@
 import { useQuery, gql } from "@apollo/client";
 
-type Task = {
+export type Task = {
   id: number;
   title: string;
   completed: boolean;
 };
 
-const GET_TASKS = gql`
+export const GET_TASKS = gql`
   query GetTasks {
     tasks {
       id

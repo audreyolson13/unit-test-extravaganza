@@ -1,7 +1,7 @@
 //Create a semi-complicated example component to test using render
 import React, { useState } from "react";
 
-type Task = {
+export type Task = {
   id: number;
   title: string;
   completed: boolean;

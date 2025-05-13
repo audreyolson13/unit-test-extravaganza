@@ -21,6 +21,7 @@ const TaskList: React.FC = () => {
           </li>
         ))}
       </ul>
+      {data?.tasks.length === 0 && <p>No tasks found.</p>}
     </div>
   );
 };
