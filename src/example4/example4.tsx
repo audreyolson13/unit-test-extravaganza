@@ -1,4 +1,6 @@
-//give me an example of a component that is better tested with userEvent than fireEvent
+//AI prompt: give me an example of a component that is better tested with userEvent than fireEvent
+// This is a simple login form component that allows users to enter their email and password.
+// It includes validation logic and displays messages based on the login attempt.
 
 import React, { useState } from "react";
 

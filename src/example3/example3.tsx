@@ -1,4 +1,5 @@
-//Create an example hook with somewhat complicated logic
+//AI prompt: Create an example hook with somewhat complicated logic
+//This is a simple react hook for a task manager that allows users to filter and toggle tasks.
 import { useState, useMemo } from "react";
 
 export type Task = {

@@ -1,3 +1,6 @@
+// This is my solution to testing example2.
+// Remove the skip from the describe statement to run the tests.
+
 import { act, renderHook } from "@testing-library/react";
 import { useTaskManager } from "./example3";
 import { Task } from "./example3";

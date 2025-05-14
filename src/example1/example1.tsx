@@ -1,3 +1,4 @@
+//This is an example of a simple react component that uses various functions and simple logic.
 import React from "react";
 
 type User = {

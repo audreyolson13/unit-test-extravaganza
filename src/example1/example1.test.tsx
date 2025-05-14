@@ -1,3 +1,5 @@
+//These tests show an example of a bad test and good tests to acheive high code coverage.
+//It is important to note that the bad test is not a good test because it does not test the component but does get 100% code coverage.
 import { render, screen } from "@testing-library/react";
 import React from "react";
 import ExampleComponent, {

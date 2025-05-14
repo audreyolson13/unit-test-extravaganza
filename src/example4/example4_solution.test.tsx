@@ -1,3 +1,6 @@
+// This is my solution to testing example2.
+// Remove the skip from the describe statement to run the tests.
+
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";

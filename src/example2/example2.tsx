@@ -1,4 +1,5 @@
-//Create a semi-complicated example component to test using render
+//AI prompt: Create a semi-complicated example component to test using render
+//This is a simple react component for a task manager that allows users to filter and toggle tasks.
 import React, { useState } from "react";
 
 export type Task = {

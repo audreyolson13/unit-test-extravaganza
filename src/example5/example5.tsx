@@ -1,4 +1,6 @@
-//Create a file that uses graphql
+//AI prompt: Create a file that uses graphql
+// This is a simple react component that fetches tasks from a GraphQL API using Apollo Client.
+// It uses a custom hook to manage the data fetching and state.
 import React from "react";
 import useGetTasks from "./useGetTasks";
 

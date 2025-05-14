@@ -1,3 +1,4 @@
+// A full example of good tests with high code coverage to test the Example Component 1.
 import { render, screen } from "@testing-library/react";
 import React from "react";
 import ExampleComponent, {
