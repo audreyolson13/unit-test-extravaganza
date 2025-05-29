@@ -6,13 +6,13 @@ env:
 
 jobs:
   env-vars:
-	  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-	env:
-	  Greeting: Hello
+  env:
+    Greeting: Hello
 
-	steps:
-	  - name: "Say Hello Mona it's Monday"
-		  run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
-		  env:
-		    First_Name: Mona
+  steps:
+    - name: "Say Hello Mona it's Monday"
+      run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+      env:
+        First_Name: Mona
