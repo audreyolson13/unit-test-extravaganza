@@ -75,6 +75,11 @@ describe("formatUserName", () => {
     const result = formatUserName(user);
     expect(result).toBe("ALICE");
   });
+  it("returns the users name in uppercase with numbers", () => {
+    const user = { id: 1, name: "Alice123", isActive: true };
+    const result = formatUserName(user);
+    expect(result).toBe("ALICE");
+  });
 
   it("returns 'Unknown User' if name is empty", () => {
     const user = { id: 1, name: "", isActive: true };
