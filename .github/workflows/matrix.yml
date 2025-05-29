@@ -1,0 +1,13 @@
+name: Matrix
+
+on: [pull_request]
+
+jobs:
+  matrix-example:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [1, 2, 3]
+        language: [node, java]
+    steps:
+      - run: echo "Testing language ${{ matrix.language }} version ${{ matrix.version }}"

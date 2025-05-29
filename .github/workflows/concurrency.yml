@@ -1,0 +1,18 @@
+name: Concurrency
+
+on: [pull_request]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  exclusive-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slow step
+        run: |
+          echo "Starting..."
+          # Simulate setup time
+          sleep 120
+          echo "Finished"
