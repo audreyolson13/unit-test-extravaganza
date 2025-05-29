@@ -1,0 +1,22 @@
+name: Outputs
+
+on: [pull_request]
+
+jobs:
+  generate-version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.set-version.outputs.version }}
+    steps:
+      - name: Set version output
+        id: set-version
+        run: |
+          VERSION="v1.2.3"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+  use-version:
+    runs-on: ubuntu-latest
+    needs: generate-version
+    steps:
+      - name: Use the version from previous job
+        run: echo "Deploying version ${{ needs.generate-version.outputs.version }}"
