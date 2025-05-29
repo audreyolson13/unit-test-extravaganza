@@ -1,0 +1,8 @@
+name: Simple Example
+on: [pull_request]
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
